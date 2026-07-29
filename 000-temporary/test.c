@@ -1,15 +1,18 @@
 // used for testing only. Everything in this file is temporary
 
 #include <stdio.h>
+#include <string.h>
 
+#define TOUPPER(c) ('a' <= (c) && (c) <= 'z' ? (c) - 'a' + 'A' : (c))
 
 int main(void){
-    int a[] = {5, 15, 34, 54, 14, 2, 52, 72, 88, 47, 11};
-    int *low = &a[0], *high = &a[10], *middle;
-    
-    middle = low + (high - low) / 2;
+    char word[5];
+    int i;
 
-    printf("The value is: %d\n", *middle);
+    strcpy(word, "abcd");
+    i = 0;
+    putchar(TOUPPER(word[++i]));
+    printf("Current i: %d\n", i);
     return 0;
 }
 
