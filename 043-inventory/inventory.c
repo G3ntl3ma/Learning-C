@@ -1,3 +1,4 @@
+//create an inventory of parts
 #include <stdio.h>
 #include "readline.h"
 

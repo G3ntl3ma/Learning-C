@@ -1,3 +1,4 @@
+//create complex numbers and make some operations on them
 #include <stdio.h>
 
 typedef struct complex {
